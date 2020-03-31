@@ -12,7 +12,7 @@ def upload():
         file = request.files['file']
         print(file.filename)
         s3 = boto3.resource('s3')
-        s3.meta.client.upload_file('/temp/hello.txt', 'wssacademy', 'hello.txt')
+        s3.meta.client.upload_file('/temp/hello.txt', 'wssacademy', file)
         return 'Uploaded'
 
 # @app.route('/download')
