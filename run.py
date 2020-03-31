@@ -13,6 +13,9 @@ def upload():
         print(file.filename)
         s3 = boto3.resource('s3')
         s3.meta.client.upload_file('/temp/hello.txt', 'wssacademy', file)
+        # wssacademy is my s3_bucket name
+        # file is used to be upload
+        # /temp/ is folder inside 'wssacademy' s3_bucket and want to store with 'hello.txt' file name
         return 'Uploaded'
 
 # @app.route('/download')
