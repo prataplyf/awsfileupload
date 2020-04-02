@@ -4,9 +4,9 @@ from botocore.exceptions import NoCredentialsError
 import uuid
 
 app = Flask(__name__)
-ACCESS_KEY = 'AKIA5UIN4AZSHBYGSNEY'
-SECRET_KEY = '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'
-S3_BUCKET = 'wssacademy'
+ACCESS_KEY = 'xxxxxxxxxxxxxxxxx'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+S3_BUCKET = 'xxxxxxx_bucket'
 
 
 def create_temp_file(size, file_name, file_content):
