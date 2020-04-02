@@ -6,5 +6,10 @@
         <input type='file' name='file' />
         <input type='submit' value="upload"/>
     </form>
+    {% if count %}
+        <h2> {{ Filename}} Uploaded Successfully.</h2>
+        <iframe height="300px" width="100%" src= {{ Filename }} name="iframe_a"></iframe>
+        <p><a href={{ url }} target="iframe_a"> {{ Filename }}</a></p>
+    {% endif %}
 </body>
 </html>
